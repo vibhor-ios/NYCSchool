@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SchoolCell" rowHeight="97" id="KGk-i7-Jjw" customClass="SchoolCell" customModule="_0230316_AdityarajGaharwar_NYCSchools" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iSX-k8-Kt8">
+                        <rect key="frame" x="16" y="10" width="288" height="76"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="highschool" translatesAutoresizingMaskIntoConstraints="NO" id="WC6-Ik-FxP">
+                                <rect key="frame" x="8" y="9" width="57.5" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WC6-Ik-FxP" secondAttribute="height" multiplier="1:1" id="ozn-hv-7YW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="jGj-zq-QFW">
+                                <rect key="frame" x="73.5" y="3" width="206.5" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSb-Ep-45R">
+                                        <rect key="frame" x="0.0" y="0.0" width="206.5" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Hx-Wl-vir">
+                                        <rect key="frame" x="0.0" y="37" width="206.5" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.26754306010063122" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jGj-zq-QFW" secondAttribute="trailing" constant="8" id="3j9-cX-z91"/>
+                            <constraint firstItem="jGj-zq-QFW" firstAttribute="leading" secondItem="WC6-Ik-FxP" secondAttribute="trailing" constant="8" id="Bx4-in-2kv"/>
+                            <constraint firstItem="WC6-Ik-FxP" firstAttribute="width" secondItem="iSX-k8-Kt8" secondAttribute="width" multiplier="0.2" id="Can-lj-1cy"/>
+                            <constraint firstItem="WC6-Ik-FxP" firstAttribute="centerY" secondItem="iSX-k8-Kt8" secondAttribute="centerY" id="Qc0-4V-FIN"/>
+                            <constraint firstItem="WC6-Ik-FxP" firstAttribute="leading" secondItem="iSX-k8-Kt8" secondAttribute="leading" constant="8" id="WX3-HX-LFo"/>
+                            <constraint firstItem="jGj-zq-QFW" firstAttribute="centerY" secondItem="iSX-k8-Kt8" secondAttribute="centerY" id="nyR-lX-QfZ"/>
+                            <constraint firstItem="jGj-zq-QFW" firstAttribute="top" secondItem="iSX-k8-Kt8" secondAttribute="top" constant="3" id="qfz-3o-nT8"/>
+                            <constraint firstAttribute="bottom" secondItem="jGj-zq-QFW" secondAttribute="bottom" constant="3" id="raL-UW-QHw"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="iSX-k8-Kt8" secondAttribute="bottom" constant="11" id="NAc-Zw-TmT"/>
+                    <constraint firstAttribute="trailing" secondItem="iSX-k8-Kt8" secondAttribute="trailing" constant="16" id="YNV-wA-mQD"/>
+                    <constraint firstItem="iSX-k8-Kt8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="gIV-W4-NYB"/>
+                    <constraint firstItem="iSX-k8-Kt8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="iaj-xu-F36"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imgSchool" destination="WC6-Ik-FxP" id="imJ-eS-BrK"/>
+                <outlet property="lblSchoolLocation" destination="0Hx-Wl-vir" id="p8c-8h-2mO"/>
+                <outlet property="lblSchoolName" destination="vSb-Ep-45R" id="vNb-Ui-wxp"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="105.46875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="highschool" width="1049" height="1100"/>
+    </resources>
+</document>
